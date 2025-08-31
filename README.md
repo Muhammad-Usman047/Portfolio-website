@@ -1,12 +1,70 @@
-# React + Vite
+# React Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React.js showcasing my projects, skills, and experience.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+[View Live Portfolio](https://your-portfolio-link.com) *← Add your live link here when deployed*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Home**: Welcome section with introduction
+- **Projects**: Showcase of my work with direct links to GitHub repositories
+- **About**: Information about my skills, experience, and background
+- **Contact**: Contact form or details to get in touch
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Modern UI**: Clean and professional design with smooth animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- **Frontend**: React.js, JavaScript 
+- **Styling**: CSS, Flexbox/Grid
+- **Build Tool**: Vite
+- **Package Manager**: npm
+- **Version Control**: Git & GitHub
+
+## 📦 Projects Section
+
+The Projects page features my work with:
+- Project cards with descriptions
+- Technologies used for each project
+- **Direct links to GitHub repositories** (click any project to visit its GitHub page)
+- Filtering by technology or category
+
+## 🔗 GitHub Integration
+
+All projects are linked to my GitHub profile: [Muhammad-Usman047](https://github.com/Muhammad-Usman047)
+
+## 🎨 Pages Overview
+
+### Home Page
+- Hero section with introduction
+- Call-to-action buttons
+- Quick overview of services/skills
+
+### Projects Page
+- Grid layout of project cards
+- Each card includes:
+  - Project name and description
+  - Technologies used
+  - GitHub link (on click)
+  - Project type/category
+
+### About Page
+- Personal introduction and background
+- Skills matrix or list
+- Education and experience timeline
+- Downloadable resume
+
+### Contact Page
+- Contact form with validation
+- Alternative contact methods
+- Social media links
+- Location information
+
+## 📋 Installation & Setup
+
+To run this project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Muhammad-Usman047/Portfolio-Website.git
