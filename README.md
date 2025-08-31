@@ -53,7 +53,6 @@ All projects are linked to my GitHub profile: [Muhammad-Usman047](https://github
 - Personal introduction and background
 - Skills matrix or list
 - Education and experience timeline
-- Downloadable resume
 
 ### Contact Page
 - Contact form with validation
