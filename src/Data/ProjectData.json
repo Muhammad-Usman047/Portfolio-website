@@ -80,20 +80,6 @@
       "githubUrl": "https://github.com/Muhammad-Usman047/Portfolio-Website"
     },
     {
-      "title": "Movie Recommendation System",
-      "technologies": [
-        "Python",
-        "NumPy",
-        "Pandas",
-        "Sklearn (CountVectorizer)",
-        "Streamlit"
-      ],
-      "tool": "Jupiter Notebook",
-      "type": "System",
-      "description": "A movie recommendation engine using data mining with a basic frontend built in Streamlit.",
-      "githubUrl": "https://github.com/Muhammad-Usman047/Amazon-clone-project"
-    },
-    {
       "title": "E-commerce Website",
       "technologies": [
         "React",
