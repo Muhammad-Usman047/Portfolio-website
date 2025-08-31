@@ -1,0 +1,110 @@
+{
+  "projects": [
+    {
+      "title": "Amazon Clone",
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
+      "tool": "VS Code",
+      "type": "Multi-page Website",
+      "description": "A front-end replica of Amazon's UI with multiple pages, responsive design, and basic navigation features.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Amazon-clone-project"
+    },
+    {
+      "title": "Cricbuzz Clone",
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
+      "tool": "VS Code",
+      "type": "Single-page Website",
+      "description": "A static clone of the Cricbuzz homepage, styled to match real-time sports content layout.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Cricbuzz-clone-project"
+    },
+    {
+      "title": "SuperStore Webpage",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "tool": "VS Code",
+      "type": "Single-page Website",
+      "description": "This project is a simple Superstore Website built using HTML, CSS, and JavaScript.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Superstore-web-page"
+    },
+    {
+      "title": "Tic Tac Toe Game",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "tool": "VS Code",
+      "type": "Game",
+      "description": "A fully functional browser game where two players can compete. Includes game logic, win tracking, and replay options.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Tic-Tac-Toe-Game"
+    },
+    {
+      "title": "Rock Paper Scissors",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "tool": "VS Code",
+      "type": "Game",
+      "description": "A fun interactive game where the player competes against the computer. Includes random AI, score tracking, and animations.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Rock-Paper-Scissor-Game"
+    },
+    {
+      "title": "Warehouse Management System",
+      "technologies": [
+        "Java"
+      ],
+      "tool": "NetBeans",
+      "type": "Management System",
+      "description": "A GUI-based system using Java OOP principles to manage inventory, items, and warehouse operations efficiently.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Warehouse-management-System"
+    },
+    {
+      "title": "Portfolio Website",
+      "technologies": [
+        "React.js",
+        "Vanilla CSS"
+      ],
+      "tool": "VS Code",
+      "type": "Website",
+      "description": "A dynamic personal portfolio built using React.js, showcasing projects, skills, contact info, and education — fully responsive and user-friendly.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Portfolio-Website"
+    },
+    {
+      "title": "Movie Recommendation System",
+      "technologies": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Sklearn (CountVectorizer)",
+        "Streamlit"
+      ],
+      "tool": "Jupiter Notebook",
+      "type": "System",
+      "description": "A movie recommendation engine using data mining with a basic frontend built in Streamlit.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/Amazon-clone-project"
+    },
+    {
+      "title": "E-commerce Website",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Vanilla CSS",
+        "React Router"
+      ],
+      "tool": "VS Code",
+      "type": "Web Application",
+      "description": "An E-commerce platform built with React featuring multiple pages and smooth navigation using React Router.",
+      "githubUrl": "https://github.com/Muhammad-Usman047/E_commerce-website"
+    }
+  ]
+}
