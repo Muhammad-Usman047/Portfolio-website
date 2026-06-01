@@ -1,30 +1,57 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Navbar from './Components/navbar';
-import './App.css';
-
+import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { AnimatePresence } from 'motion/react';
 
-function App() {
-  const theme = useSelector((state) => state.theme.value);
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ScrollProgress from './components/ScrollProgress';
 
-  return (
-    <>
-      <Navbar />
-      <div className={`container ${theme}`}>
-        <Routes>
-          <Route path='/' element={<Home />}></Route>
-          <Route path='About' element={<About />} />
-          <Route path='Projects' element={<Projects />} />
-          <Route path='Contact' element={<Contact />} />
-        </Routes>
-      </div>
-    </>
-  )
+import Home from './pages/Home';
+import Work from './pages/Work';
+import CaseStudy from './pages/CaseStudy';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+import './app.css';
+
+// Reset scroll position on every route change.
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  }, [pathname]);
+  return null;
 }
 
-export default App;
+export default function App() {
+  const theme = useSelector((state) => state.theme.value);
+  const location = useLocation();
+
+  useEffect(() => {
+    document.documentElement.classList.remove('theme-light', 'theme-dark');
+    document.documentElement.classList.add(`theme-${theme}`);
+  }, [theme]);
+
+  return (
+    <div className={`app-shell theme-${theme}`}>
+      <div className="grain" aria-hidden="true" />
+      <ScrollProgress />
+      <ScrollToTop />
+      <Navbar />
+      <main>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/work/:slug" element={<CaseStudy />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </AnimatePresence>
+      </main>
+      <Footer />
+    </div>
+  );
+}

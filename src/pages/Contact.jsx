@@ -1,42 +1,45 @@
-const Contact = () => {
-    return (
-        <div className="contact">
-            <div className='contact-details'>
-                <div className='info'>
-                    <h1>Contact me</h1>
-                    <p>I'm always open to discussing new opportunities, collaborations, or projects.<br /> Feel free to reach out through any of the channels below!</p>
+import PageWrap from '../Components/PageWrap';
+import Reveal from '../Components/Reveal';
+import { profile } from '../Data/profile';
 
-                    <p><strong>Email:</strong> <a href="mailto:muhammadusman4@gmail.com">muhammadusman4@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+921234567891">0123-4567891</a></p>
-                    <p><strong>Address:</strong> 123 Main St, Your City, Your Country</p>
+export default function Contact() {
+  return (
+    <PageWrap>
+      <section className="section wrap">
+        <div style={{ maxWidth: '560px', margin: '0 auto' }}>
 
-                    <form>
-                        <p>Name : <input type="text" name="name" placeholder="Your Name" required /></p>
-                        <p>Email : <input type="email" name="email" placeholder="Your Email" required /></p>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <button onClick={()=> {alert("submitted")}}>Send</button>
-                    </form>
-                </div>
-                <div className='social-links'>
-                    <p><strong>Find me on:</strong></p>
-                    <ul>
-                        <li><a href="" target="_blank">LinkedIn</a></li>
-                        <li><a href="" target="_blank">GitHub</a></li>
-                        <li><a href="" target="_blank">Twitter</a></li>
-                    </ul>
+          <Reveal>
+            <p className="eyebrow">Contact</p>
+            <h1 className="contact__title">Let's talk.</h1>
+            <p className="contact__lede">
+              Hiring, freelance, or just want to compare notes on a build? I read every message and
+              reply quickly. {profile.availability}.
+            </p>
 
-                    <p><strong>Schedule a meeting:</strong> <a href="" target="_blank">Book via Calendly</a></p>
-
-                    <p>
-                        <strong>Download My Resume:</strong>
-                        <a href="Your_Resume_Link.pdf" download>Click here to download</a>
-                    </p>
-
-                    <p><strong>Let’s collaborate and build something amazing together!</strong></p></div>
-
+            <div className="contact__channels">
+              <a className="contact__channel" href={`mailto:${profile.email}`}>
+                <span className="contact__channel-l">Email</span>
+                <span className="contact__channel-v">{profile.email}</span>
+              </a>
+              <a className="contact__channel" href={`tel:${profile.phoneRaw}`}>
+                <span className="contact__channel-l">Phone</span>
+                <span className="contact__channel-v">{profile.phone}</span>
+              </a>
+              <div className="contact__channel contact__channel--static">
+                <span className="contact__channel-l">Based in</span>
+                <span className="contact__channel-v">{profile.location}</span>
+              </div>
             </div>
-        </div>
-    )
-}
 
-export default Contact;
+            <div className="contact__socials">
+              <a className="btn btn-ghost" href={profile.socials.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a className="btn btn-ghost" href={profile.socials.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a className="btn btn-ghost" href={profile.resume} download>Résumé ↓</a>
+            </div>
+          </Reveal>
+
+        </div>
+      </section>
+    </PageWrap>
+  );
+}
