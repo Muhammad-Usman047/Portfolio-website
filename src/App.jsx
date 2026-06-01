@@ -13,7 +13,7 @@ import CaseStudy from './pages/CaseStudy';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
-import './app.css';
+import './App.css';
 
 // Reset scroll position on every route change.
 function ScrollToTop() {
