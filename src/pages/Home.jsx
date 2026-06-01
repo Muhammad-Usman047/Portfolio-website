@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import PageWrap from '../Components/PageWrap';
 import Reveal from '../Components/Reveal';
 import { profile, skillGroups } from '../data/profile';
-import { projects } from '../data/projects';
+import { projects } from '../Data/projects';
 import profileImg from '../assets/profile.jpeg';
 
 const featured = projects.filter((p) => p.featured);

@@ -1,7 +1,7 @@
 import PageWrap from '../Components/PageWrap';
 import Reveal from '../Components/Reveal';
 import { Link } from 'react-router-dom';
-import { profile, experience, education, skillGroups } from '../data/profile';
+import { profile, experience, education, skillGroups } from '../Data/profile';
 import profileImg from '../assets/profile.jpeg';
 
 const principles = [

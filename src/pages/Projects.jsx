@@ -1,4 +1,4 @@
-import ProjectData from '../data/ProjectData.json';
+import ProjectData from '../Data/ProjectData.json';
 import { useSelector } from 'react-redux';
 
 const Projects = () => {
