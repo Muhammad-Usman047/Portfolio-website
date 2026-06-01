@@ -9,7 +9,7 @@ export const profile = {
   email: 'muhammadusman2884@gmail.com',
   phone: '+92 325 8492279',
   phoneRaw: '+923258492279',
-  resume: '/public/UsmanCV010.pdf',
+  resume: '/UsmanCV010.pdf',
   availability: 'Open to full-time & freelance roles',
   socials: {
     github: 'https://github.com/Muhammad-Usman047',
