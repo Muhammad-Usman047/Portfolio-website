@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import PageWrap from '../Components/PageWrap';
 import Reveal from '../Components/Reveal';
-import { profile, skillGroups } from '../data/profile';
+import { profile, skillGroups } from '../Data/profile';
 import { projects } from '../Data/projects';
 import profileImg from '../assets/profile.jpeg';
 
