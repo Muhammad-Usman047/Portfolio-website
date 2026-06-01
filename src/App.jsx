@@ -3,9 +3,9 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { AnimatePresence } from 'motion/react';
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ScrollProgress from './components/ScrollProgress';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import ScrollProgress from './Components/ScrollProgress';
 
 import Home from './pages/Home';
 import Work from './pages/Work';

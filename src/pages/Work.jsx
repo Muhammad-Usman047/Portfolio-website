@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import PageWrap from '../components/PageWrap';
-import Reveal from '../components/Reveal';
+import PageWrap from '../Components/PageWrap';
+import Reveal from '../Components/Reveal';
 import { projects, moreProjects } from '../data/projects';
 
 export default function Work() {

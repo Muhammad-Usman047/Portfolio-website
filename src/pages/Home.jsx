@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import PageWrap from '../components/PageWrap';
-import Reveal from '../components/Reveal';
+import PageWrap from '../Components/PageWrap';
+import Reveal from '../Components/Reveal';
 import { profile, skillGroups } from '../data/profile';
 import { projects } from '../data/projects';
 import profileImg from '../assets/profile.jpeg';
