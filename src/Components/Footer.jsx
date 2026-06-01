@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { profile } from '../data/profile';
+import { profile } from '../Data/profile';
 
 export default function Footer() {
   const year = new Date().getFullYear();

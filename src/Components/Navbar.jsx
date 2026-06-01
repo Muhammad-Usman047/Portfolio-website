@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { motion, AnimatePresence } from 'motion/react';
-import { themeChange } from '../redux/Themes/themeSlice';
-import { profile } from '../data/profile';
+import { themeChange } from '../Redux/Themes/themeSlice';
+import { profile } from '../Data/profile';
 
 const LINKS = [
   { to: '/', label: 'Home' },
